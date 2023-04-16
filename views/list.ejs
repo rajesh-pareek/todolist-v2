@@ -6,9 +6,18 @@
 
 
         <div class="box" id="heading">
-            <h1>
-                <%=listTitle%>
-            </h1>
+            
+                <% if(listTitle==="Today"){  %>
+                    <h1>
+                        <%=listTitle%> 🎯🎯
+                    </h1>
+               <%  }else{   %>
+                    <h1>
+                        <%=listTitle%> 
+                    </h1>
+               <%  }         %>
+                
+            
             <form class="item" action="/compose" method="post">
                 <input type="text" name="inputid" placeholder="Create New List Or Switch" autocomplete="off">
                 <button class="mybtn" type="submit" name="button">+</button>
