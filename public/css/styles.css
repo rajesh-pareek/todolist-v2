@@ -68,14 +68,17 @@ p {
 }
 
 .item {
- /*  text-align: center;
-  margin-left: 20px; */
+  text-align: center;
+  margin-left: 20px;
+  
+}
+
+.items{
   display:flex;
   flex-direction:row;
   justify-content: space-around;
   flex-wrap: nowrap;
 }
-
 button {
   min-height: 50px;
   width: 50px;
