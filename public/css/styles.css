@@ -79,7 +79,7 @@ p {
   justify-content: space-around;
   flex-wrap: nowrap;
 }
-button {
+.mybtn{
   visibility: hidden;
   min-height: 50px;
   width: 50px;
