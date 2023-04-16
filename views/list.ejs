@@ -1,0 +1,47 @@
+<%- include("header") -%>
+
+    <body>
+
+
+
+
+        <div class="box" id="heading">
+            <h1>
+                <%=listTitle%>
+
+                    <form action="/compose" method="post">
+                        <input type="text" name="inputid" placeholder="Create New List Or Switch" autocomplete="off">
+                        <button class="mybtn" type="submit" name="button">+໋</button>
+                    </form>
+            </h1>
+        </div>
+
+        <div class="box">
+
+            <% newItems.forEach(function(item){ %>
+                <form action="/delete" method="post">
+                    <div class="item">
+                        <input type="checkbox" name="checkbox" value="<%=item._id %>" onChange="this.form.submit()">
+                        <p>
+                            <%= item.name %>
+                        </p>
+                    </div>
+                    <input type="hidden" name="listName" value="<%= listTitle %>">
+                </form>
+                <% }) %>
+
+
+                    <form class="item" action="/" method="post">
+                        <input type="text" name="newItem" placeholder="New Task" autocomplete="off">
+                        <button class="mybtn" type="submit" name="list" value="<%=listTitle%>">+</button>
+                    </form>
+        </div>
+
+
+
+
+    </body>
+
+    </html>
+
+    <%-include("footer") -%>
