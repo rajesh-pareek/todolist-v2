@@ -8,12 +8,12 @@
         <div class="box" id="heading">
             <h1>
                 <%=listTitle%>
-
-                    <form action="/compose" method="post">
-                        <input type="text" name="inputid" placeholder="Create New List Or Switch" autocomplete="off">
-                        <button class="mybtn" type="submit" name="button">+໋</button>
-                    </form>
             </h1>
+            <form class="item" action="/compose" method="post">
+                <input type="text" name="inputid" placeholder="Create New List Or Switch" autocomplete="off">
+                <button class="mybtn" type="submit" name="button">+</button>
+            </form>
+
         </div>
 
         <div class="box">

@@ -12,13 +12,18 @@ body{
   background-color: #A683E3;
 }
 h1 {
-  color: #A683E3;
+  color: #ffffff;
   padding: 10px;
   text-align: center;
   font-family: 'Dongle', sans-serif;
+  background-color: #A683E3;
+  margin:6px 6px 6px 6px;
+  margin-top:6px;
+  border-radius:5px;
 }
 
 .box {
+  padding:6px;
   max-width: 400px;
   margin: 50px auto;
   background:white;
@@ -62,9 +67,13 @@ p {
   font-family: 'Dongle', sans-serif;
 }
 
-form.item {
-  text-align: center;
-  margin-left: 20px;
+.item {
+ /*  text-align: center;
+  margin-left: 20px; */
+  display:flex;
+  flex-direction:row;
+  justify-content: space-around;
+  flex-wrap: nowrap;
 }
 
 button {
@@ -77,6 +86,7 @@ button {
   font-size: 30px;
   padding-bottom: 6px;
   border-width: 0;
+  margin-right:6px;
 }
 
 input[type="text"] {
